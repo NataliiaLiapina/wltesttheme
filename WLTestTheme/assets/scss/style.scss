@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../images/bg_body.png) repeat;
+    font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3{
+    margin: 0;
+}
+header{
+    height: 235px;
+    overflow: hidden;
+    position: relative;
+    // min-width: 1280px;
+    // width: 100%;
+    background: url(../images/headre-bg.png) no-repeat scroll 50% 0 transparent;
+    background-size: cover;
+    border-top: 3px solid #7d8d9b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 30px;
+    @media only screen and (max-width: 600px){
+        background: url(../images/headre-bg.png) no-repeat scroll 30% 0 transparent;
+    }
+}
+.bg_top {
+    background: url(../images/top_bg.png) repeat-x scroll 0 0 transparent;
+    height: 361px;
+    position: absolute;
+    width: 100%;
+}
+.site-branding{
+    color: #7d8d9b;
+    font-size: 16px;
+    font-weight: 700;
+    left: 93px;
+    margin: 0;
+    position: relative;
+    font-family: Roboto, sans-serif;
+    line-height: 1.375;
+    text-decoration: none;
+    text-transform: none;
+    top: -15px;
+    @media only screen and (max-width: 480px){
+        left: 75px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .site-logo img{
+        width: 250px;
+        height: auto;
+    }
+}
+.main-section{
+    padding: 0 30px;
+    @media only screen and (max-width: 480px){
+        padding: 0 15px;
+    }
+}
+.content_inner {
+    background:#ffffff;
+    border-top: 4px solid #FFC816;
+    padding-bottom: 20px;
+    min-height: 200px;
+    position: relative;
+    z-index: 2;
+    .header_inner{
+        padding: 30px 24px;
+        background-color: #E5F8FF;
+    }
+    .cars-listing li a{
+        color: #000;
+    }
+    .section-content{
+        display: flex;
+        align-items: center;
+        border-top: 4px solid #FFC816;
+        @media only screen and (max-width: 1024px){
+            flex-direction: column;
+        }
+        .section-content_img{
+            width: 50%;
+            padding: 30px 24px;
+            @media only screen and (max-width: 1024px){
+                width: 100%;
+            }
+            img{
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+		.characteristics{
+            width: 50%;
+            padding: 30px 24px;
+            @media only screen and (max-width: 1024px){
+                width: 100%;
+            }
+            h2{
+                background-color: #f5f8fa;
+                padding: 12px 10px;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+            p{
+                padding: 12px 10px;
+                margin: 0;
+                &.color{
+                    margin: 12px 10px;
+                    width: 14px;
+                    border: 1px solid #7d8d9b;
+                }
+            }
+        }
+    }
+}
+.site-footer{
+    background-color: #32373b;
+    padding: 20px 50px;
+    margin-top: 15px;
+    min-height: 200px;
+    position: relative;
+    .site-logo img{
+        display: block;
+        margin: 0 auto;
+        @media only screen and (max-width: 480px){
+            width: 200px;
+            height: auto;
+        }
+    }
+    .copyright{
+        color: #FF4141;
+        position: absolute;
+        bottom: 50px;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
